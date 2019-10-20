@@ -1,0 +1,39 @@
+---
+title: "hw_200"
+author: "simaaq"
+date: "2019-10-20"
+output: workflowr::wflow_html
+editor_options:
+  chunk_output_type: console
+---
+
+## Introduction
+## Hooke's Law demo. A spring experiment is carried out twice. Spring 1 and spring 2 are loaded with 0, 1, 2, ..., 9 equal weights and their lengths are measured. Each record contains the index, weight, spring 1 length and spring 2 length. There is also an initial header line.
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+location <- "https://people.sc.fsu.edu/~jburkardt/data/csv/hooke.csv"
+data <- read.csv(location)
+summary(data,title="hooke")
+```
+
+```{r}
+plot(data)
+```
+
+```{r}
+head(data)
+plot(data$Mass..kg., data$Spring.1..m., xlab = "mass", ylab = "spring1")
+```
+
+
+```{r}
+plot(data$Mass..kg., data$Spring.2..m., xlab = "mass", ylab = "spring2")
+```
+
+
+```{r}
+plot(data$Spring.1..m., data$Spring.2..m., xlab = "spring1", ylab = "spring2")
+```
+
+
+

@@ -8,4 +8,6 @@ editor_options:
   chunk_output_type: console
 ---
 
-Welcome to my research website.
+Welcome to my Homework3 website.
+
+* [Hooke's law demo](hw_200.html)
