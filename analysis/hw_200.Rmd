@@ -35,5 +35,15 @@ plot(data$Mass..kg., data$Spring.2..m., xlab = "mass", ylab = "spring2")
 plot(data$Spring.1..m., data$Spring.2..m., xlab = "spring1", ylab = "spring2")
 ```
 
+##The linear regression
+```{r}
+spring1 = data$Spring.1..m.
+spring2 = data$Spring.2..m.
+
+reg<- lm(spring1~spring2)
+plot(spring1,spring2, col="red", main = "spring1 and spring2 Regression", abline(reg), cex = 1.3, pch= 16, xlab = "spring1 length", ylab= "spring2 length")
+reg
+print(summary(reg))
+```
 
 
