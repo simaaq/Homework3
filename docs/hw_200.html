@@ -406,7 +406,7 @@ div.section {
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2019-10-20
+<strong>Last updated:</strong> 2019-10-21
 </p>
 <p>
 <strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 7 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
@@ -497,10 +497,10 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomsimaaqHomework3treeda552f9476400fbaf719d34abc6d94ca83516a82targetblankda552f9a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/simaaq/Homework3/tree/da552f9476400fbaf719d34abc6d94ca83516a82" target="_blank">da552f9</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomsimaaqHomework3tree6f05c01199b15face9d2f8ee2896bd32ad64a5a5targetblank6f05c01a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/simaaq/Homework3/tree/6f05c01199b15face9d2f8ee2896bd32ad64a5a5" target="_blank">6f05c01</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomsimaaqHomework3treeda552f9476400fbaf719d34abc6d94ca83516a82targetblankda552f9a" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomsimaaqHomework3tree6f05c01199b15face9d2f8ee2896bd32ad64a5a5targetblank6f05c01a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility. The version displayed above was the version of the Git repository at the time these results were generated. <br><br> Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -547,6 +547,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/simaaq/Homework3/blob/6f05c01199b15face9d2f8ee2896bd32ad64a5a5/analysis/hw_200.Rmd" target="_blank">6f05c01</a>
+</td>
+<td>
+simaaq
+</td>
+<td>
+2019-10-21
+</td>
+<td>
+add more linear regression
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/simaaq/Homework3/21daf4ecac7ffb5a3ad10c4fb8132f8e3add6223/docs/hw_200.html" target="_blank">21daf4e</a>
+</td>
+<td>
+simaaq
+</td>
+<td>
+2019-10-20
+</td>
+<td>
+Build site.
+</td>
+</tr>
 <tr>
 <td>
 html
@@ -627,54 +661,18 @@ Hooke’s law demo
 </div>
 <div id="hookes-law-demo.-a-spring-experiment-is-carried-out-twice.-spring-1-and-spring-2-are-loaded-with-0-1-2-9-equal-weights-and-their-lengths-are-measured.-each-record-contains-the-index-weight-spring-1-length-and-spring-2-length.-there-is-also-an-initial-header-line." class="section level2">
 <h2>Hooke’s Law demo. A spring experiment is carried out twice. Spring 1 and spring 2 are loaded with 0, 1, 2, …, 9 equal weights and their lengths are measured. Each record contains the index, weight, spring 1 length and spring 2 length. There is also an initial header line.</h2>
+</div>
+<div id="below-is-the-descpritve-statistics-for-the-two-columns-from-the-dataset-the-descriptive1-shows-the-statistics-of-spring1-data-and-descriptive2-shows-the-statistics-of-spring2-data.-the-mean-value-for-spring1-is-2.205-and-the-mean-value-for-spring2-is-0.14880" class="section level2">
+<h2>below is the descpritve statistics for the two columns from the dataset, the descriptive1 shows the statistics of spring1 data and descriptive2 shows the statistics of spring2 data. The mean value for spring1 is 2.205 and the mean value for spring2 is 0.14880</h2>
+<pre class="r"><code>descriptive1 &lt;- data[[2]]
+descriptive2 &lt;- data[[3]]
+summary(descriptive1)</code></pre>
+<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   1.103   2.205   2.205   3.308   4.410 </code></pre>
+<pre class="r"><code>summary(descriptive2)</code></pre>
+<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.05000 0.09425 0.15400 0.14880 0.20125 0.23800 </code></pre>
 <pre class="r"><code>plot(data)</code></pre>
-<p><img src="figure/hw_200.Rmd/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
-<p>
-<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-1-1">
-Past versions of unnamed-chunk-1-1.png
-</button>
-</p>
-<div id="fig-unnamed-chunk-1-1" class="collapse">
-<div class="table-responsive">
-<table class="table table-condensed table-hover">
-<thead>
-<tr>
-<th>
-Version
-</th>
-<th>
-Author
-</th>
-<th>
-Date
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<a href="https://github.com/simaaq/Homework3/blob/a1a2f6cf42c4ec230ab01e8df2cf88758ea3f5b0/docs/figure/hw_200.Rmd/unnamed-chunk-1-1.png" target="_blank">a1a2f6c</a>
-</td>
-<td>
-simaaq
-</td>
-<td>
-2019-10-20
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<pre class="r"><code>head(data)</code></pre>
-<pre><code>  Index Mass..kg. Spring.1..m. Spring.2..m.
-1     1      0.00        0.050        0.050
-2     2      0.49        0.066        0.066
-3     3      0.98        0.087        0.080
-4     4      1.47        0.116        0.108
-5     5      1.96        0.142        0.138
-6     6      2.45        0.166        0.158</code></pre>
-<pre class="r"><code>plot(data$Mass..kg., data$Spring.1..m., xlab = &quot;mass&quot;, ylab = &quot;spring1&quot;)</code></pre>
 <p><img src="figure/hw_200.Rmd/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>
 <button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-2-1">
@@ -713,7 +711,15 @@ simaaq
 </table>
 </div>
 </div>
-<pre class="r"><code>plot(data$Mass..kg., data$Spring.2..m., xlab = &quot;mass&quot;, ylab = &quot;spring2&quot;)</code></pre>
+<pre class="r"><code>head(data)</code></pre>
+<pre><code>  Index Mass..kg. Spring.1..m. Spring.2..m.
+1     1      0.00        0.050        0.050
+2     2      0.49        0.066        0.066
+3     3      0.98        0.087        0.080
+4     4      1.47        0.116        0.108
+5     5      1.96        0.142        0.138
+6     6      2.45        0.166        0.158</code></pre>
+<pre class="r"><code>plot(data$Mass..kg., data$Spring.1..m., xlab = &quot;mass&quot;, ylab = &quot;spring1&quot;)</code></pre>
 <p><img src="figure/hw_200.Rmd/unnamed-chunk-3-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>
 <button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-3-1">
@@ -752,7 +758,7 @@ simaaq
 </table>
 </div>
 </div>
-<pre class="r"><code>plot(data$Spring.1..m., data$Spring.2..m., xlab = &quot;spring1&quot;, ylab = &quot;spring2&quot;)</code></pre>
+<pre class="r"><code>plot(data$Mass..kg., data$Spring.2..m., xlab = &quot;mass&quot;, ylab = &quot;spring2&quot;)</code></pre>
 <p><img src="figure/hw_200.Rmd/unnamed-chunk-4-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>
 <button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-4-1">
@@ -791,12 +797,7 @@ simaaq
 </table>
 </div>
 </div>
-<p>##The linear regression</p>
-<pre class="r"><code>spring1 = data$Spring.1..m.
-spring2 = data$Spring.2..m.
-
-reg&lt;- lm(spring1~spring2)
-plot(spring1,spring2, col=&quot;red&quot;, main = &quot;spring1 and spring2 Regression&quot;, abline(reg), cex = 1.3, pch= 16, xlab = &quot;spring1 length&quot;, ylab= &quot;spring2 length&quot;)</code></pre>
+<pre class="r"><code>plot(data$Spring.1..m., data$Spring.2..m., xlab = &quot;spring1&quot;, ylab = &quot;spring2&quot;)</code></pre>
 <p><img src="figure/hw_200.Rmd/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>
 <button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-5-1">
@@ -835,6 +836,39 @@ simaaq
 </table>
 </div>
 </div>
+<p>##The linear regression</p>
+<pre class="r"><code>spring1 = data$Spring.1..m.
+spring2 = data$Spring.2..m.
+
+reg&lt;- lm(spring1~spring2)
+plot(spring1,spring2, col=&quot;red&quot;, main = &quot;spring1 and spring2 Regression&quot;, abline(reg), cex = 1.3, pch= 16, xlab = &quot;spring1 length&quot;, ylab= &quot;spring2 length&quot;)</code></pre>
+<p><img src="figure/hw_200.Rmd/unnamed-chunk-6-1.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>summary(reg)</code></pre>
+<pre><code>
+Call:
+lm(formula = spring1 ~ spring2)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.009353 -0.002666 -0.001058  0.002733  0.007981 
+
+Coefficients:
+             Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept) -0.001986   0.004605  -0.431    0.678    
+spring2      1.074737   0.030238  35.542  4.3e-10 ***
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+Residual standard error: 0.005663 on 8 degrees of freedom
+Multiple R-squared:  0.9937,    Adjusted R-squared:  0.9929 
+F-statistic:  1263 on 1 and 8 DF,  p-value: 4.299e-10</code></pre>
+<pre class="r"><code>res&lt;-residuals(reg)
+mean(res)</code></pre>
+<pre><code>[1] -2.710505e-19</code></pre>
+<pre class="r"><code>median(res)</code></pre>
+<pre><code>[1] -0.001057566</code></pre>
+<pre class="r"><code>plot(res)</code></pre>
+<p><img src="figure/hw_200.Rmd/unnamed-chunk-6-2.png" width="672" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>reg</code></pre>
 <pre><code>
 Call:
