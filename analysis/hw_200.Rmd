@@ -60,7 +60,11 @@ median(res)
 plot(res)
 reg
 print(summary(reg))
+res.aov<- aov(spring1~spring2)
+pVal <- anova(res.aov)$'Pr(>F)'[1]
+summary(res.aov)
+
 ```
-##From the statistics above, we will see that the median residual is `r median(res)`. This number is very small. Thus the relationship between the spring one and two is not that important. 
+##From the statistics above, we will see that the median residual is `r median(res)`. This number is very small. And the p-value is `r anova(res.aov)$Pr[1]`Thus the relationship between the spring one and two is not that important. 
 
 
